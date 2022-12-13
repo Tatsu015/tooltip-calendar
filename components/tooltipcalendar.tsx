@@ -1,19 +1,12 @@
-import { useState } from "react";
-import Calendar from "react-calendar";
+import Calendar from 'js-year-calendar';
+import 'js-year-calendar/dist/js-year-calendar.css';
 
 const TooltipCalendar: React.FC = () => {
-    const [value, onChange] = useState(new Date());
+    const calendar = new Calendar('.calendar');
 
     return (
         <div>
-            <Calendar
-                onChange={onChange}
-                value={value}
-                // activeStartDate={value}
-                // defaultActiveStartDate={value}
-                // goToRangeStartOnSelect={false}
-                minDate={new Date()}
-            />
+            test
         </div>
     );
 }
